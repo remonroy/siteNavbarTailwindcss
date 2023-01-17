@@ -1,5 +1,5 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
+import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Cart from "./pages/LinkPage/Cart";
 import Dashboard from "./pages/LinkPage/Dashboard";
@@ -13,7 +13,7 @@ import SiteNavbar from "./pages/Navbar/SiteNavbar";
 
 const App = () => {
   return (
-    <section className="flex gap-6 bg-[#ddd]">
+    <section className="flex gap-6 bg-[#ddd] ">
       <SiteNavbar />
       <Routes>
         <Route path="/" element={<Home />} />
